@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         return 0;
     }
     
-    cout << "введите погрешность: ";
+    cout << "введите eps: ";
     cin >> eps;                                     // ввод погрешности
     cout << endl;
     
@@ -39,9 +39,9 @@ int main(int argc, const char * argv[]) {
         sum += sign * argx / znam;                  // добавление следующего слагаемого к сумме
     }
                                                     // вывод всех полученных значений
-    cout << "1) полученная погрешность: " << abs(tsum - sum) << endl;
-    cout << "2) кол-во слагаемых: " << n << endl;
-    cout << "3) полученное значение: " << sum << "\n\n";
+    cout << "1) полученная погрешность: diff = " << abs(tsum - sum) << endl;
+    cout << "2) кол-во слагаемых: n = " << n << endl;
+    cout << "3) полученное значение: sum = " << sum << "\n\n";
 
     return 0;
 }
